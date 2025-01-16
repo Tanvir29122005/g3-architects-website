@@ -81,7 +81,7 @@ nav li a {
     width: 100%;
 }
 
-/* responsive media queries */
+/* responsive media queries for mobaile */
 
 @media screen and (max-width:576px) {
     header {
@@ -89,9 +89,21 @@ nav li a {
     }
     nav {
         flex-direction: column;
+        margin-top: 10px;
     }
     nav h3 {
         margin-bottom: 10px;
     }
     
+}
+
+/* responsive media queries for tab or ipad */
+
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        padding: 30px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
