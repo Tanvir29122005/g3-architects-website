@@ -11,7 +11,15 @@
 /* shared styles */
 
 .btn-primary{
-    
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 24px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor:pointer;
+    border: 0;
+    margin-bottom: 50px;
 }
 
 /* header styles start */
@@ -66,4 +74,24 @@ nav li a {
 
 .banner-description {
     color: #727272;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* responsive media queries */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav h3 {
+        margin-bottom: 10px;
+    }
+    
 }
