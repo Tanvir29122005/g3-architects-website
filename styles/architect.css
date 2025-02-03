@@ -8,7 +8,7 @@
     padding: 0px; */
 }
 
-/* shared styles */
+/* shared related styles */
 
 .btn-primary {
     border-radius: 8px;
@@ -47,7 +47,7 @@ main>section {
     font-weight: 700;
 }
 
-/* header styles start */
+/* header related styles */
 
 header {
     background-color: #FFF4E7;
@@ -83,7 +83,7 @@ nav li a {
     color: #424242;
 }
 
-/* banner styles start */
+/* banner related styles */
 
 .banner-content {
     max-width: 800px;
@@ -106,7 +106,7 @@ nav li a {
     width: 100%;
 }
 
-/* teams style start */
+/* teams related styles */
 
 main {
     max-width: 1440px;
@@ -136,6 +136,48 @@ main {
 
 #quick-list {
     font-weight: 500;
+}
+
+/* features section related styles */
+
+.features {
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+}
+
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -130px;
+    margin-left: -80px;
+}
+
+#experience-year {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.f-img img {
+    width: 100%;
 }
 
 /* some facts related styles */
@@ -189,14 +231,32 @@ main {
     filter: grayscale(100%);
 }
 
+/* footer related styles */
+
+#footer-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    background: #FFF4E7;
+    margin: 130px 240px;
+    padding: 35px 400px;
+    border-radius: 8px;
+}
+
 /* responsive media queries for mobaile */
 
 @media screen and (max-width:576px) {
+
+    main>section {
+        margin-top: 10px;
+    }
+
     header {
         padding: 20px;
     }
 
     nav,
+    .features,
     .teams {
         flex-direction: column;
         margin-top: 10px;
@@ -218,7 +278,8 @@ main {
         gap: 24px;
     }
 
-    .section-title, .fact-description {
+    .section-title,
+    .fact-description {
         text-align: center;
     }
 
@@ -226,8 +287,22 @@ main {
         margin-left: 20px;
     }
 
+    .features {
+        gap: 10px;
+    }
+
     .btn {
         margin-left: 25%;
+    }
+
+    #experience-badge {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #footer-title {
+        margin: 30px 30px;
+        padding: 15px 2px;
     }
 
 }
@@ -240,7 +315,8 @@ main {
     }
 
     nav,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -253,5 +329,10 @@ main {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 50px;
+    }
+
+    #experience-badge {
+        margin-top: 10px;
+        margin-left: 30px;
     }
 }
